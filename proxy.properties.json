@@ -1,0 +1,16 @@
+{
+  "blacklistFile": "blacklist.json",
+  "certFile": "",
+  "enableMetrics": true,
+  "keyFile": "",
+  "listenAddr": ":8080",
+  "logFile": "",
+  "requestsPerMin": 60,
+  "routes": [
+    {
+      "pathPrefix": "/",
+      "targetURL": "http://localhost:8000"
+    }
+  ],
+  "targetURL": "http://localhost:8000"
+}

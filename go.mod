@@ -1,4 +1,4 @@
-module github.com/TaqdeesHigh/rp-go
+module RP-GO
 
 go 1.24.1
 

@@ -34,7 +34,7 @@ A powerful and extensible reverse proxy server written in Go. Supports dynamic r
 
 1. **You can run the proxy using command-line flags or a config file**: 
     ```bash
-    ./reverse-proxy
+    go run main.go
     Optional Flags:
     Flag	Description
     -config	Path to JSON config file
@@ -49,7 +49,7 @@ A powerful and extensible reverse proxy server written in Go. Supports dynamic r
     ```
 
     ```bash 
-    ./reverse-proxy -listen ":443" -target "http://localhost:8000" -cert cert.pem -key key.pem -rate 100
+    go run main.go -listen ":443" -target "http://localhost:8000" -cert cert.pem -key key.pem -rate 100
     ```
 
 ## Configuration File (proxy.properties.json)
@@ -137,7 +137,7 @@ proxy.AddRoute("/auth", "http://localhost:9000")
 
 **To enable HTTPS, provide the following flags or config options**:
 
-`./reverse-proxy -cert cert.pem -key key.pem`
+`go run main.go -cert cert.pem -key key.pem`
 
 The server will automatically switch to `ListenAndServeTLS`.
 
